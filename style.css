@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+}
+body{
+    font-family: 'Overpass';
+    background-color: var(--VeryDarkBlue);
+}
+
+/* ------------
+CARD DETAILs
+---------------- */
+.card{
+    background-color: hsl(210, 19%, 13%);
+    
+    width:450px;
+    height:430px;
+    border-radius: 25px;
+    margin:0 auto;
+    margin-top: 150px;
+    padding: 10px;
+}
+.content{
+    opacity:1;
+}
+#love-card{
+    margin-left: 105px;
+    margin-top: 30px;
+}
+#love-card a{
+    text-decoration: none;
+    color: var(--White);
+}
+#love-card a span{
+    font-weight: 700;
+    
+}
+#love-card a span:hover{
+    transition: .6s ease;
+   color: var(--primary);
+}
+
+.content img{
+    width: 40px;
+    border:none;
+    background-color: var(--DarkBlue);
+    padding: 10px;
+    border-radius: 35px; 
+    margin-bottom: -50px;
+    margin-left: 15px;
+}
+.content h2{
+    color:var(--White);
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.content p{
+    margin-top: 15px;
+    margin-left: 20px;
+    width:375px;
+    font-size: 15px;
+    color: var(--LightGrey)
+}
+
+
+.list{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.list-item{
+    list-style: none;
+    color: var(--LightGrey);
+    background-color: var(--DarkBlue);
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    padding: 15px 2px 0 20px;
+    border-radius: 35px; 
+    
+}
+.list-item:hover{
+    background-color: var(--primary);
+    color: var(--White);
+    transition:.5s ease;
+    cursor:pointer;
+}
+.list-item:active{
+    background-color: var(--primary);
+    color: var(--White);
+    transition:.5s ease;
+}
+
+
+.content button{
+    font-family: 'Overpass';
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--primary);
+    color: var(--White);
+    border:none;
+    padding:5px;
+    width:390px;
+    height:40px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+.content button:hover{
+    background-color: var(--White);
+    color: var(--primary);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+/*-------
+ afterrrr
+ -------*/
+.after{
+    margin-top: 200px;
+    height: 300px;
+    display: none;
+    /* transition: .2s ease; */
+}
+#after-image{
+    position: relative;    
+    top:-180px;
+    left:220px;
+    width: 180px;
+    background-color: hsl(210, 19%, 13%);
+    margin-left: -108px;
+    margin-bottom: 20px
+}
+
+
+.after h3{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -10px;
+    margin-top: 30px;
+}
+#ratings{
+    font-size: 15px;
+    background-color: var(--DarkBlue);
+    color:var(--primary);
+    text-align: center;
+    padding: 10px 0px;
+    width: 200px;
+    height: 40px;
+    border-radius:20px;
+    margin: 0 auto;
+    margin-top: -170px;
+} 
+
+.conc{
+    color: var(--White);
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 380px;
+}
+
+.second{
+    bordeR:2px solid red;
+    margin-left:-7px;
+}
+
+/* --------------------
+MEDIA QUERY STARTS HERE
+----------------------- */
+
+@media (min-width:354px) and (max-width:415px){
+    /* *{
+        border:2px solid red;
+    } */
+    body{
+       
+       height:660px;
+    }
+    .card{
+        margin-top: 110px;
+        width:345px;
+    }
+    #love-card{
+        margin:40px 0 0 48px ;
+        width:300px;
+    }
+    .list{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .list-item{
+        margin-left: -5px;
+    }
+    .content button{
+        width:300px;
+        margin: 35px 0 0 15px ;
+    }
+    .content p{
+        
+        width:300px;
+    }
+
+    .conc{
+        text-align: center;
+        margin-left:15px;
+        width:300px;
+    }
+    #after-image{
+        margin-left:-157px;
+    }
+    .after{
+        margin-right: 10px;
+        margin-top:230px;
+        height:400px;   
+    }
+    #ratings{
+        margin-left: 65px;
+    }
+    .after h3{
+        margin-left: 5px;
+    }
+        
+}
