@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image" sizes="32x32" href="./images/icon-star.svg">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+<div class="card" id="card">
+
+   <div class="content" id="content">
+      <img src="./images/icon-star.svg" alt="">
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <ul class="list">
+        <li class="list-item " id="1" onclick="select1()">1</li>
+        <li class="list-item " id="2" onclick="select2()">2</li>
+        <li class="list-item " id="3" onclick="select3()">3</li>
+        <li class="list-item " id="4" onclick="select4()">4</li>
+        <li class="list-item " id="5" onclick="select5()">5</li>
+      </ul>
+      <button id="button" onClick="rate()">SUBMIT</button>
+      <p id="love-card"><a href="https://www.shivanshsoni.com">Made with ❤️ by <span>SHIVANSH SONI</span></a></p>
+   </div>
+
+    <!-- content div ends0 -->
+
+   <div class="after" id="after">
+      <img id="after-image" src="./images/illustration-thank-you.svg" alt="">
+
+      <p id="ratings">You selected 1<!-- Add rating here --> out of 5 </p>
+
+
+      <h3>Thank You !</h3>
+
+      <p class="conc">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch! </p>
+     
+   </div>
+
+  
+</div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./app/app.js"></script>
+</body>
+
+</html>
